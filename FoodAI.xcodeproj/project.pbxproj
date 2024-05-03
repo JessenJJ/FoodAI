@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B265DEF2BE3793500CC7DF1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265DEE2BE3793500CC7DF1 /* Constant.swift */; };
+		5B265E482BE3EF5200CC7DF1 /* VeganFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265E472BE3EF5200CC7DF1 /* VeganFoodView.swift */; };
+		5B265E4A2BE3EFAD00CC7DF1 /* MeatFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265E492BE3EFAD00CC7DF1 /* MeatFoodView.swift */; };
+		5B265E4C2BE3F00C00CC7DF1 /* HealthyFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265E4B2BE3F00C00CC7DF1 /* HealthyFoodView.swift */; };
+		5B265E4E2BE3F03F00CC7DF1 /* CheatFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265E4D2BE3F03F00CC7DF1 /* CheatFoodView.swift */; };
+		5B265E502BE47F0300CC7DF1 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265E4F2BE47F0300CC7DF1 /* FoodModel.swift */; };
+		5B265E532BE483A600CC7DF1 /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265E522BE483A600CC7DF1 /* FoodRow.swift */; };
+		5B265E552BE489CD00CC7DF1 /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265E542BE489CD00CC7DF1 /* RecommendationView.swift */; };
+		5B5585872BDB5EC7002415C0 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5B5585862BDB5EC7002415C0 /* FirebaseRemoteConfigSwift */; };
+		5B5585892BDB5EE7002415C0 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 5B5585882BDB5EE7002415C0 /* FirebaseRemoteConfig */; };
+		5B55858C2BDB608C002415C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B55858B2BDB608B002415C0 /* GoogleService-Info.plist */; };
+		5B55858F2BDB616A002415C0 /* RemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B55858E2BDB616A002415C0 /* RemoteConfigService.swift */; };
+		5B7DA6F82BE49B0200D48F06 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DA6F72BE49B0200D48F06 /* CategoryView.swift */; };
+		5B7DA6FA2BE49CFF00D48F06 /* Recomend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DA6F92BE49CFF00D48F06 /* Recomend.swift */; };
+		5B7DA6FD2BE49F4400D48F06 /* RecomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DA6FC2BE49F4400D48F06 /* RecomRow.swift */; };
+		5B7DA7002BE4A36000D48F06 /* popular.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7DA6FF2BE4A36000D48F06 /* popular.json */; };
+		5B7DA7022BE4B6CF00D48F06 /* PopularFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DA7012BE4B6CF00D48F06 /* PopularFood.swift */; };
+		5B7DA7042BE4B6F500D48F06 /* PopularModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DA7032BE4B6F500D48F06 /* PopularModel.swift */; };
+		5B7DA7072BE4BA4E00D48F06 /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DA7062BE4BA4E00D48F06 /* Bundle+Ext.swift */; };
+		5B7DA7092BE4BF7A00D48F06 /* PopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DA7082BE4BF7A00D48F06 /* PopularView.swift */; };
+		5BE5433B2BD8B23100E3BE35 /* PlacesAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE5433A2BD8B23100E3BE35 /* PlacesAIApp.swift */; };
+		5BE5433D2BD8B23100E3BE35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE5433C2BD8B23100E3BE35 /* ContentView.swift */; };
+		5BE5433F2BD8B23500E3BE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE5433E2BD8B23500E3BE35 /* Assets.xcassets */; };
+		5BE543422BD8B23500E3BE35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE543412BD8B23500E3BE35 /* Preview Assets.xcassets */; };
+		5BE5434F2BD8B39700E3BE35 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 5BE5434E2BD8B39700E3BE35 /* GoogleGenerativeAI */; };
+		5BE543542BD8B56500E3BE35 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543532BD8B56500E3BE35 /* Place.swift */; };
+		5BE543562BD8B78B00E3BE35 /* PlaceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543552BD8B78B00E3BE35 /* PlaceVM.swift */; };
+		5BE543582BD8BA5D00E3BE35 /* PlaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543572BD8BA5D00E3BE35 /* PlaceRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B265DEE2BE3793500CC7DF1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5B265E472BE3EF5200CC7DF1 /* VeganFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganFoodView.swift; sourceTree = "<group>"; };
+		5B265E492BE3EFAD00CC7DF1 /* MeatFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatFoodView.swift; sourceTree = "<group>"; };
+		5B265E4B2BE3F00C00CC7DF1 /* HealthyFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyFoodView.swift; sourceTree = "<group>"; };
+		5B265E4D2BE3F03F00CC7DF1 /* CheatFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatFoodView.swift; sourceTree = "<group>"; };
+		5B265E4F2BE47F0300CC7DF1 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		5B265E522BE483A600CC7DF1 /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
+		5B265E542BE489CD00CC7DF1 /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
+		5B265E562BE48C9400CC7DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5B55858B2BDB608B002415C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B55858E2BDB616A002415C0 /* RemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigService.swift; sourceTree = "<group>"; };
+		5B7DA6F72BE49B0200D48F06 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		5B7DA6F92BE49CFF00D48F06 /* Recomend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recomend.swift; sourceTree = "<group>"; };
+		5B7DA6FC2BE49F4400D48F06 /* RecomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomRow.swift; sourceTree = "<group>"; };
+		5B7DA6FF2BE4A36000D48F06 /* popular.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = popular.json; sourceTree = "<group>"; };
+		5B7DA7012BE4B6CF00D48F06 /* PopularFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularFood.swift; sourceTree = "<group>"; };
+		5B7DA7032BE4B6F500D48F06 /* PopularModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularModel.swift; sourceTree = "<group>"; };
+		5B7DA7062BE4BA4E00D48F06 /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
+		5B7DA7082BE4BF7A00D48F06 /* PopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularView.swift; sourceTree = "<group>"; };
+		5BE543372BD8B23100E3BE35 /* FoodAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE5433A2BD8B23100E3BE35 /* PlacesAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesAIApp.swift; sourceTree = "<group>"; };
+		5BE5433C2BD8B23100E3BE35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5BE5433E2BD8B23500E3BE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BE543412BD8B23500E3BE35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BE543532BD8B56500E3BE35 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		5BE543552BD8B78B00E3BE35 /* PlaceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceVM.swift; sourceTree = "<group>"; };
+		5BE543572BD8BA5D00E3BE35 /* PlaceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BE543342BD8B23100E3BE35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5585892BDB5EE7002415C0 /* FirebaseRemoteConfig in Frameworks */,
+				5BE5434F2BD8B39700E3BE35 /* GoogleGenerativeAI in Frameworks */,
+				5B5585872BDB5EC7002415C0 /* FirebaseRemoteConfigSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B265E512BE4839200CC7DF1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				5BE543572BD8BA5D00E3BE35 /* PlaceRow.swift */,
+				5B7DA6FC2BE49F4400D48F06 /* RecomRow.swift */,
+				5B265E522BE483A600CC7DF1 /* FoodRow.swift */,
+				5B7DA7012BE4B6CF00D48F06 /* PopularFood.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		5B5585852BDB5EC7002415C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B55858D2BDB6150002415C0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5B55858E2BDB616A002415C0 /* RemoteConfigService.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5B7DA6FE2BE4A34600D48F06 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5B7DA6FF2BE4A36000D48F06 /* popular.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5B7DA7052BE4BA3D00D48F06 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5B7DA7062BE4BA4E00D48F06 /* Bundle+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5BE5432E2BD8B23100E3BE35 = {
+			isa = PBXGroup;
+			children = (
+				5BE543392BD8B23100E3BE35 /* FoodAI */,
+				5BE543382BD8B23100E3BE35 /* Products */,
+				5B5585852BDB5EC7002415C0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5BE543382BD8B23100E3BE35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BE543372BD8B23100E3BE35 /* FoodAI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BE543392BD8B23100E3BE35 /* FoodAI */ = {
+			isa = PBXGroup;
+			children = (
+				5B7DA7052BE4BA3D00D48F06 /* Extension */,
+				5B265E562BE48C9400CC7DF1 /* Info.plist */,
+				5B55858D2BDB6150002415C0 /* Config */,
+				5B55858B2BDB608B002415C0 /* GoogleService-Info.plist */,
+				5BE5434C2BD8B26A00E3BE35 /* ViewModel */,
+				5BE5434B2BD8B26000E3BE35 /* Resources */,
+				5BE5434A2BD8B25400E3BE35 /* App */,
+				5BE543492BD8B24F00E3BE35 /* Model */,
+				5BE543482BD8B24400E3BE35 /* View */,
+				5BE543402BD8B23500E3BE35 /* Preview Content */,
+			);
+			path = FoodAI;
+			sourceTree = "<group>";
+		};
+		5BE543402BD8B23500E3BE35 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5BE543412BD8B23500E3BE35 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5BE543482BD8B24400E3BE35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B265E512BE4839200CC7DF1 /* Component */,
+				5BE5433C2BD8B23100E3BE35 /* ContentView.swift */,
+				5B265E472BE3EF5200CC7DF1 /* VeganFoodView.swift */,
+				5B265E492BE3EFAD00CC7DF1 /* MeatFoodView.swift */,
+				5B265E4B2BE3F00C00CC7DF1 /* HealthyFoodView.swift */,
+				5B265E4D2BE3F03F00CC7DF1 /* CheatFoodView.swift */,
+				5B265E542BE489CD00CC7DF1 /* RecommendationView.swift */,
+				5B7DA6F72BE49B0200D48F06 /* CategoryView.swift */,
+				5B7DA7082BE4BF7A00D48F06 /* PopularView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BE543492BD8B24F00E3BE35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BE543532BD8B56500E3BE35 /* Place.swift */,
+				5B265DEE2BE3793500CC7DF1 /* Constant.swift */,
+				5B265E4F2BE47F0300CC7DF1 /* FoodModel.swift */,
+				5B7DA6F92BE49CFF00D48F06 /* Recomend.swift */,
+				5B7DA7032BE4B6F500D48F06 /* PopularModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BE5434A2BD8B25400E3BE35 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5BE5433A2BD8B23100E3BE35 /* PlacesAIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5BE5434B2BD8B26000E3BE35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B7DA6FE2BE4A34600D48F06 /* Data */,
+				5BE5433E2BD8B23500E3BE35 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5BE5434C2BD8B26A00E3BE35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BE543552BD8B78B00E3BE35 /* PlaceVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BE543362BD8B23100E3BE35 /* FoodAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE543452BD8B23500E3BE35 /* Build configuration list for PBXNativeTarget "FoodAI" */;
+			buildPhases = (
+				5BE543332BD8B23100E3BE35 /* Sources */,
+				5BE543342BD8B23100E3BE35 /* Frameworks */,
+				5BE543352BD8B23100E3BE35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodAI;
+			packageProductDependencies = (
+				5BE5434E2BD8B39700E3BE35 /* GoogleGenerativeAI */,
+				5B5585862BDB5EC7002415C0 /* FirebaseRemoteConfigSwift */,
+				5B5585882BDB5EE7002415C0 /* FirebaseRemoteConfig */,
+			);
+			productName = PlacesAI;
+			productReference = 5BE543372BD8B23100E3BE35 /* FoodAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BE5432F2BD8B23100E3BE35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					5BE543362BD8B23100E3BE35 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 5BE543322BD8B23100E3BE35 /* Build configuration list for PBXProject "FoodAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BE5432E2BD8B23100E3BE35;
+			packageReferences = (
+				5BE5434D2BD8B39700E3BE35 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				5B5585842BDB5CE4002415C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 5BE543382BD8B23100E3BE35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BE543362BD8B23100E3BE35 /* FoodAI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BE543352BD8B23100E3BE35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE543422BD8B23500E3BE35 /* Preview Assets.xcassets in Resources */,
+				5B7DA7002BE4A36000D48F06 /* popular.json in Resources */,
+				5BE5433F2BD8B23500E3BE35 /* Assets.xcassets in Resources */,
+				5B55858C2BDB608C002415C0 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BE543332BD8B23100E3BE35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B265E532BE483A600CC7DF1 /* FoodRow.swift in Sources */,
+				5B7DA7022BE4B6CF00D48F06 /* PopularFood.swift in Sources */,
+				5B265E552BE489CD00CC7DF1 /* RecommendationView.swift in Sources */,
+				5B265DEF2BE3793500CC7DF1 /* Constant.swift in Sources */,
+				5BE543582BD8BA5D00E3BE35 /* PlaceRow.swift in Sources */,
+				5BE5433D2BD8B23100E3BE35 /* ContentView.swift in Sources */,
+				5B265E502BE47F0300CC7DF1 /* FoodModel.swift in Sources */,
+				5B7DA6FA2BE49CFF00D48F06 /* Recomend.swift in Sources */,
+				5B265E482BE3EF5200CC7DF1 /* VeganFoodView.swift in Sources */,
+				5BE5433B2BD8B23100E3BE35 /* PlacesAIApp.swift in Sources */,
+				5B7DA6FD2BE49F4400D48F06 /* RecomRow.swift in Sources */,
+				5BE543562BD8B78B00E3BE35 /* PlaceVM.swift in Sources */,
+				5BE543542BD8B56500E3BE35 /* Place.swift in Sources */,
+				5B265E4E2BE3F03F00CC7DF1 /* CheatFoodView.swift in Sources */,
+				5B265E4A2BE3EFAD00CC7DF1 /* MeatFoodView.swift in Sources */,
+				5B265E4C2BE3F00C00CC7DF1 /* HealthyFoodView.swift in Sources */,
+				5B55858F2BDB616A002415C0 /* RemoteConfigService.swift in Sources */,
+				5B7DA7072BE4BA4E00D48F06 /* Bundle+Ext.swift in Sources */,
+				5B7DA7042BE4B6F500D48F06 /* PopularModel.swift in Sources */,
+				5B7DA7092BE4BF7A00D48F06 /* PopularView.swift in Sources */,
+				5B7DA6F82BE49B0200D48F06 /* CategoryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5BE543432BD8B23500E3BE35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BE543442BD8B23500E3BE35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BE543462BD8B23500E3BE35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FoodAI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodAI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesswift.PlacesAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BE543472BD8B23500E3BE35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FoodAI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodAI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesswift.PlacesAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BE543322BD8B23100E3BE35 /* Build configuration list for PBXProject "FoodAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE543432BD8B23500E3BE35 /* Debug */,
+				5BE543442BD8B23500E3BE35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE543452BD8B23500E3BE35 /* Build configuration list for PBXNativeTarget "FoodAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE543462BD8B23500E3BE35 /* Debug */,
+				5BE543472BD8B23500E3BE35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B5585842BDB5CE4002415C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+		5BE5434D2BD8B39700E3BE35 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/generative-ai-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B5585862BDB5EC7002415C0 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B5585842BDB5CE4002415C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		5B5585882BDB5EE7002415C0 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B5585842BDB5CE4002415C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		5BE5434E2BD8B39700E3BE35 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BE5434D2BD8B39700E3BE35 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5BE5432F2BD8B23100E3BE35 /* Project object */;
+}

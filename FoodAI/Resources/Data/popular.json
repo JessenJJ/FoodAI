@@ -1,0 +1,68 @@
+[
+  {
+    "id" : "ramen",
+    "name" : "Ramen",
+    "headline" : "The world most delicious food ",
+    "description" : "Ramen is a traditional Japanese noodle soup dish that has gained worldwide popularity. It typically consists of wheat noodles served in a flavorful broth, accompanied by various toppings. The broth, which forms the heart of the dish, can be made from a variety of ingredients such as pork, chicken, seafood, or vegetables, and is often simmered for hours to develop complex flavors.",
+    "link" : "https://en.wikipedia.org/wiki/ramen",
+    "image" : "ramen",
+  },
+  {
+    "id" : "beef",
+    "name" : "Beef Steak",
+    "headline" : "originally found from the past using fire",
+    "description" : "Beef steak is a classic dish enjoyed around the world, prized for its rich flavor and tender texture. It typically consists of a thick slice of beef, usually sourced from high-quality cuts such as ribeye, strip loin (also known as New York strip), tenderloin (filet mignon), or sirloin.",
+    "link" : "https://en.wikipedia.org/wiki/beef",
+    "image" : "beef",
+  },
+  {
+    "id" : "soto",
+    "name" : "Soto Betawi",
+    "headline" : "The best soup based food in indonesia",
+    "description" : "Soto Betawi is a popular Indonesian dish that originates from the Betawi people of Jakarta, the capital city of Indonesia. This aromatic soup is renowned for its rich and creamy flavor, distinct from other variations of soto found across the Indonesian archipelago.",
+    "link" : "https://en.wikipedia.org/wiki/soto",
+    "image" : "soto",
+  },
+  {
+    "id" : "gulai",
+    "name" : "Gulai",
+    "headline" : "The best creamy soup based in indonesia",
+    "description" : "Gulai is a traditional Indonesian and Malaysian dish known for its rich, flavorful curry-like sauce. It's a popular dish enjoyed across various regions and is often served during special occasions, celebrations, or family gatherings. Gulai can be made with a variety of meats, seafood, or vegetables, and the specific ingredients can vary based on regional preferences.",
+    "link" : "https://en.wikipedia.org/wiki/gulai",
+    "image" : "gulai",
+  },
+  {
+    "id" : "rendang",
+    "name" : "Rendang",
+    "headline" : "The best food in indonesia or maybe in the world ",
+    "description" : "Rendang is a world-renowned Indonesian dish, particularly famous in the Minangkabau ethnic group of West Sumatra. It's a rich and flavorful meat dish that's been cooked slowly in coconut milk and a mixture of lemongrass, galangal, garlic, turmeric, ginger, and other spices until the sauce thickens and the meat absorbs all the flavors from a variety of ingredients such as pork, chicken, seafood, or vegetables, and is often simmered for hours to develop complex flavors.",
+    "link" : "https://en.wikipedia.org/wiki/rendang",
+    "image" : "rendang",
+  },
+  {
+    "id" : "spageti",
+    "name" : "Spaghetti",
+    "headline" : "The best food in indonesia or maybe in the world ",
+    "description" : "Spaghetti with sausage is a delicious and hearty pasta dish that combines the savory flavors of Italian sausage with the classic Italian pasta. It's a popular variation of spaghetti that adds a meaty twist to the traditional marinara or Bolognese sauces.",
+    "link" : "https://en.wikipedia.org/wiki/spageti",
+    "image" : "spageti",
+  },
+  {
+    "id" : "sushi",
+    "name" : "Sushi",
+    "headline" : "The best food in indonesia or maybe in the world ",
+    "description" : "Sushi is a quintessential Japanese dish that has gained international popularity for its delicate flavors, artistic presentation, and meticulous preparation. At its core, sushi consists of vinegared rice combined with a variety of other ingredients, such as seafood, vegetables, and occasionally tropical fruits, wrapped in seaweed (nori), and served in bite-sized pieces.",
+    "link" : "https://en.wikipedia.org/wiki/sushi",
+    "image" : "sushi",
+  },
+  {
+    "id" : "pizza",
+    "name" : "Pizza",
+    "headline" : "The best food in indonesia or maybe in the world ",
+    "description" : "Pizza is a globally beloved dish that originated in Italy but has evolved into countless variations around the world. At its core, pizza consists of a round, flatbread base topped with tomato sauce and cheese, baked in an oven until the crust is crispy and the cheese is melted and bubbly. However, there are endless possibilities when it comes to toppings and styles, making pizza a versatile and customizable dish.",
+    "link" : "https://en.wikipedia.org/wiki/pizza",
+    "image" : "pizza",
+  },
+
+]
+
